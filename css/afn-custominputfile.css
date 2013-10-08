@@ -1,0 +1,101 @@
+/**
+ * ----------------------------------------------------------------------------------
+ * jQuery customfileinput plugin
+ * Author: Alfie Nollora, alfienollora@yahoo.com
+ * Copyright (c) 2013 alfieindesigns
+ * licensed under MIT (alfieindesigns.com/code/afn-custominputfile/mit-license.txt)
+ * ----------------------------------------------------------------------------------
+ */
+body {
+    background-color: #ccc;
+    font-family: arial;
+    font-size: 14px;
+}
+.container {
+    background-color: #fff;
+    padding: 15px 20px;
+    width: 300px;
+    margin: 0 auto;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: 120px;
+}
+h1 {
+    margin: 0 0 15px;
+}
+/* File Input */
+textarea {resize:none; height: 110px;}
+input, select, textarea {
+    padding: 5px 8px;
+    font-family: inherit;
+    font-size: inherit;
+}
+.file-type, input, select, textarea {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 12px;
+    border: 1px solid #444;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.file-type input {
+    margin-bottom: 0;
+    padding: 5px 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
+}
+.file-type #file {
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    opacity: 0;
+    -moz-opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    z-index: 999;
+}
+    .file-type #file-path {
+        float: left;
+        width: 100%;
+        border: none;
+    }
+    .file-type .button {
+        display: block;
+        background-color: #444;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 300;
+        padding: 6px 15px 4px;
+        -moz-border-radius: 0 1px 1px 0;
+        -webkit-border-radius: 0 1px 1px 0;
+        border-radius: 0 1px 1px 0;
+    }
+    .file-type:hover .button {
+        background-color: #000;
+    }
+
+    .submit-btn {
+        display: block;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        z-index: 300;
+        padding: 10px 15px 13px;
+        font-size: 16px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
